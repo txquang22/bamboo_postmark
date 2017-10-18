@@ -26,7 +26,7 @@ defmodule BambooPostmark.Mixfile do
      {:poison, ">= 1.5.0"},
      {:plug, "~> 1.0"},
      {:cowboy, "~> 1.0", only: [:test, :dev]},
-     {:bamboo, git: "https://github.com/thoughtbot/bamboo.git", override: true},
+     {:bamboo, "~> 1.0.0-rc.1"},
      {:ex_doc, "~> 0.13", only: :dev}]
   end
 
