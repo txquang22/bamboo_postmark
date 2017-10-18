@@ -1,7 +1,7 @@
 defmodule BambooPostmark.Mixfile do
   use Mix.Project
 
-  @project_url "https://github.com/pablo-co/bamboo_postmark"
+  @project_url "https://github.com/txquang22/bamboo_postmark"
 
   def project do
     [app: :bamboo_postmark,
@@ -26,6 +26,7 @@ defmodule BambooPostmark.Mixfile do
      {:poison, ">= 1.5.0"},
      {:plug, "~> 1.0"},
      {:cowboy, "~> 1.0", only: [:test, :dev]},
+     {:bamboo, git: "https://github.com/thoughtbot/bamboo.git"},
      {:ex_doc, "~> 0.13", only: :dev}]
   end
 
